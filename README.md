@@ -1,21 +1,34 @@
-# Life Microinsurance Pricing Platform
+# Machine Learning Risk Classification Framework for Life Microinsurance
 
-A machine learning-driven actuarial pricing framework designed for informal sector workers.
+## Overview
+
+This project demonstrates the application of machine learning in actuarial underwriting and risk assessment for life microinsurance products.
+
+A Random Forest classifier was developed to categorize policyholders into risk groups using demographic, socioeconomic, and health-related characteristics.
+
+## Key Findings
+
+- Chronic Illness History was the strongest predictor of risk.
+- Estimated Income and Age significantly influenced classification outcomes.
+- The model achieved approximately 90% classification accuracy.
 
 ## Technologies
 
 - Python
-- Streamlit
-- Random Forest
-- Scikit-Learn
 - Pandas
+- NumPy
+- Scikit-Learn
 - Matplotlib
+- Streamlit
 
-## Features
+## Business Applications
 
-- Executive project overview
-- Dataset summary
-- Methodology walkthrough
-- Exploratory data analysis
-- Model evaluation
-- Business impact assessment
+- Underwriting Support
+- Risk Segmentation
+- Product Development
+- Pricing Support
+- Insurance Innovation
+
+## Developed By
+
+SmartActuary
