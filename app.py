@@ -1,23 +1,74 @@
 import streamlit as st
+from PIL import Image
 
 st.set_page_config(
-    page_title="Life Microinsurance Pricing Platform",
-    page_icon="📊",
+    page_title="Microinsurance Risk Classification",
     layout="wide"
 )
 
-st.title("Life Microinsurance Pricing Platform")
+st.title(
+    "Machine Learning Risk Classification Framework for Life Microinsurance"
+)
 
 st.markdown("""
-A machine learning-driven actuarial pricing framework designed to improve affordability and accessibility of life microinsurance products for informal sector workers.
+A predictive underwriting model developed using
+Random Forest classification to support risk assessment.
 """)
 
-st.divider()
+st.header("Executive Dashboard")
 
-st.header("Executive Summary")
+col1,col2,col3,col4 = st.columns(4)
+
+col1.metric("Accuracy","90%")
+col2.metric("Risk Factors","6")
+col3.metric("Risk Classes","2")
+col4.metric("Model","Random Forest")
+
+st.header("Project Overview")
 
 st.write("""
-This project demonstrates how actuarial pricing and machine learning can be combined to create fair and sustainable microinsurance products.
+This project explores the use of machine learning
+for risk classification within life microinsurance.
+""")
 
-A Random Forest model was used to classify policyholders into risk categories before premium estimation.
+st.header("Population Characteristics")
+
+image = Image.open(
+    "assets/descriptive_analysis.png"
+)
+
+st.image(
+    image,
+    use_container_width=True
+)
+
+st.header("Feature Importance")
+
+image = Image.open(
+    "assets/feature_importance.png"
+)
+
+st.image(
+    image,
+    use_container_width=True
+)
+
+st.header("Classification Performance")
+
+image = Image.open(
+    "assets/confusion_matrix.png"
+)
+
+st.image(
+    image,
+    use_container_width=True
+)
+
+st.header("Business Applications")
+
+st.markdown("""
+- Underwriting Support
+- Risk Segmentation
+- Product Pricing
+- Product Development
 """)
