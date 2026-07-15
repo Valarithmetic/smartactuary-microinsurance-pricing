@@ -273,4 +273,3 @@ st.markdown("""
 <a href="https://smartactuary.co.ke/#contact" style="color:#D9A441; font-weight:600;">Contact</a>
 </div>
 """, unsafe_allow_html=True)
-""")
