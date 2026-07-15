@@ -69,11 +69,9 @@ st.markdown("""
 def sa_section_start(eyebrow, title):
     st.markdown(f'<span class="sa-eyebrow">{eyebrow}</span>', unsafe_allow_html=True)
     st.markdown(f'<div class="sa-h2">{title}</div>', unsafe_allow_html=True)
-    st.markdown('<div class="sa-panel">', unsafe_allow_html=True)
 
 
 def sa_section_end():
-    st.markdown('</div>', unsafe_allow_html=True)
     st.markdown("<br>", unsafe_allow_html=True)
 
 
